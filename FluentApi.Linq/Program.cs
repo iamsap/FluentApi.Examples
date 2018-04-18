@@ -15,12 +15,15 @@ namespace FluentApi.Linq
             new Order {Id=5, Description="Order 5",Total=500.00, IsShipped=true},
         };
 
+        const int MaxTotal = 300;
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            GetShippedOrdersGreaterOrEqual(MaxTotal);
+            GetShippedOrdersGreaterOrEqualLinq(MaxTotal);
         }
 
-        #region Standard
+        #region Standard (47 lines w/bugs)
         static IEnumerable<Order> GetShippedOrdersGreaterOrEqual(int total)
         {
             var orders = new List<Order>();
@@ -35,11 +38,11 @@ namespace FluentApi.Linq
             return orders;
         }
 
-        static int Comparison(Order x, Order y)
+        static int Comparison(Order order1, Order order2)
         {
-            if (x == null)
+            if (order1 == null)
             {
-                if (y == null)
+                if (order2 == null)
                 {
                     return 0;
                 }
@@ -50,13 +53,13 @@ namespace FluentApi.Linq
             }
             else
             {
-                if (y == null)
+                if (order2 == null)
                 {
                     return 1;
                 }
                 else
                 {
-                    int retval = x.Id.CompareTo(y.Id);
+                    int retval = order1.Id.CompareTo(order2.Id);
 
                     if (retval != 0)
                     {
@@ -64,7 +67,7 @@ namespace FluentApi.Linq
                     }
                     else
                     {
-                        return x.Id.CompareTo(y.Id);
+                        return order1.Id.CompareTo(order1.Id);
                     }
                 }
             }
@@ -72,10 +75,12 @@ namespace FluentApi.Linq
             
         #endregion
 
-        #region Linq
+        #region Linq (1 line)
         static IEnumerable<Order> GetShippedOrdersGreaterOrEqualLinq(int total)
         {
-            return _orders.Where(o => o.Total >= total && o.IsShipped).OrderBy(orderBy => orderBy.Id);
+            return _orders
+                    .Where(o => o.Total >= total && o.IsShipped)
+                    .OrderBy(orderBy => orderBy.Id);
         }
         #endregion
 

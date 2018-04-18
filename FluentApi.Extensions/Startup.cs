@@ -1,12 +1,18 @@
 ﻿using System;
+using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
 
 namespace FluentApi.Extensions
 {
     public class Startup
     {
-        /**
-        public void Configure(IServiceCollection services){
+        const string Issuer = "<<Issuer>>";
+        const string Audience = "<<Audience>>";
+        const string SigningKey = "<<Key>>";
+
+        public void AddJwt(IServiceCollection services){
             services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -16,19 +22,18 @@ namespace FluentApi.Extensions
             {
                 options.TokenValidationParameters = new TokenValidationParameters
                 {
-                    ValidIssuer = "https://angular-azure1.auth0.com/",
-                    ValidAudience = "api://forecasts",
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("6sJcIDp0ok2yNioISK1E0gAZHp63YB13"))
+                    ValidIssuer = Issuer,
+                    ValidAudience = Audience,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(SigningKey))
                 };
             });
         }
-         */
 
-        public void Configure(IServiceCollection services){
-            //services.AddJwt()
-                    //.WithIssuer("issuer")
-                    //.WithAudience("audience")
-                    //.WithKey("key");
+        public void AddJwtFluent(IServiceCollection services){
+            services.AddJwt()
+                    .WithIssuer(Issuer)
+                    .WithAudience(Audience)
+                    .WithKey(SigningKey);
         }
     }
 }

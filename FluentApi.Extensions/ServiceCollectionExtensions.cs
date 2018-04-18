@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text;
+using FluentApi.Extensions.Jwt;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
@@ -8,7 +9,7 @@ namespace FluentApi.Extensions
 {
     public static class ServiceCollectionExtensions
     {
-        public static void AddJwt(this IServiceCollection services){
+        public static IJwt AddJwt(this IServiceCollection services){
             services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -24,6 +25,7 @@ namespace FluentApi.Extensions
                 };
             });
 
+            return new FluentApi.Extensions.Jwt.Jwt();
         }
 
     }
