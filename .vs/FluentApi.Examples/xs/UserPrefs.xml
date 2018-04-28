@@ -1,0 +1,24 @@
+﻿<Properties StartupConfiguration="{4C938CF7-DD10-46C8-9F47-F8C297926BC4}|Default" GitUserInfo="UsingMD">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FluentAPI.Examples Status">
+    <Files>
+      <File FileName="FluentApi.Extensions/Startup.cs" Line="33" Column="26" />
+      <File FileName="FluentApi.SampleApp/Program.cs" Line="30" Column="24" />
+      <File FileName="Fluentapi.SampleApp.Fluent/FluentEnroller.cs" Line="9" Column="29" />
+      <File FileName="Fluentapi.SampleApp.Fluent/Framework/IApplyable.cs" Line="2" Column="18" />
+      <File FileName="Fluentapi.SampleApp.Fluent/Enroll/StartEnroll.cs" Line="10" Column="45" />
+      <File FileName="Fluentapi.SampleApp.Fluent/Enroll/IWithStudents.cs" Line="9" Column="35" />
+      <File FileName="Fluentapi.SampleApp.Fluent/Enroll/IWithCourse.cs" Line="6" Column="20" />
+      <File FileName="FluentAPI.Examples Status" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.FluentApi.Conjuctions PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.FluentApi.ExistingApis.FluentAssertions FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.FluentApi.SampleApp PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.FluentApi.Chaining PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
