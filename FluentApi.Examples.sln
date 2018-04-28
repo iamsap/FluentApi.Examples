@@ -7,9 +7,21 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentApi.Extensions", "Flu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentApi.Conjuctions", "FluentApi.Conjuctions\FluentApi.Conjuctions.csproj", "{60C7B498-8646-4A33-8FA5-099E19B255FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentApi.Linq", "FluentApi.Linq\FluentApi.Linq.csproj", "{DBFE5CAB-B869-447D-8C9C-7A13E5FEC803}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentApi.ExistingApis.Linq", "FluentApi.Linq\FluentApi.ExistingApis.Linq.csproj", "{DBFE5CAB-B869-447D-8C9C-7A13E5FEC803}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentApi.LinkingChains", "FluentApi.LinkingChains\FluentApi.LinkingChains.csproj", "{6B2980A1-4D4C-4448-A637-11A36A956ECA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentApi.ExistingApis.AzureManagement", "FluentApi.ExistingApis.AzureManagement\FluentApi.ExistingApis.AzureManagement.csproj", "{11BE9508-82F5-4C93-9412-2397108DE409}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentApi.Generics", "FluentApi.Generics\FluentApi.Generics.csproj", "{C2A5C9AF-4EF4-48EC-BFE7-F0F2BB56C0E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentApi.SampleApp", "FluentApi.SampleApp\FluentApi.SampleApp.csproj", "{4C938CF7-DD10-46C8-9F47-F8C297926BC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentApi.SampleApp.Fluent.Lib", "Fluentapi.SampleApp.Fluent\Fluentapi.SampleApp.Fluent.Lib.csproj", "{C4E688B5-5B64-41A4-861E-DA78207DC840}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentApi.SampleApp.Common.Lib", "FluentApi.SampleApp.Common.Lib\FluentApi.SampleApp.Common.Lib.csproj", "{BDB0B5A9-4B8C-4579-85D3-C135E5AA2753}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentApi.ExistingApis.FluentAssertions", "FluentApi.ExistingApis.FluentAssertions\FluentApi.ExistingApis.FluentAssertions.csproj", "{3F2E1FE4-1F91-4911-AA1F-64B68F9AEDC5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,5 +49,29 @@ Global
 		{6B2980A1-4D4C-4448-A637-11A36A956ECA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B2980A1-4D4C-4448-A637-11A36A956ECA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B2980A1-4D4C-4448-A637-11A36A956ECA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11BE9508-82F5-4C93-9412-2397108DE409}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11BE9508-82F5-4C93-9412-2397108DE409}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11BE9508-82F5-4C93-9412-2397108DE409}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11BE9508-82F5-4C93-9412-2397108DE409}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2A5C9AF-4EF4-48EC-BFE7-F0F2BB56C0E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2A5C9AF-4EF4-48EC-BFE7-F0F2BB56C0E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2A5C9AF-4EF4-48EC-BFE7-F0F2BB56C0E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2A5C9AF-4EF4-48EC-BFE7-F0F2BB56C0E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C938CF7-DD10-46C8-9F47-F8C297926BC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C938CF7-DD10-46C8-9F47-F8C297926BC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C938CF7-DD10-46C8-9F47-F8C297926BC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C938CF7-DD10-46C8-9F47-F8C297926BC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4E688B5-5B64-41A4-861E-DA78207DC840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4E688B5-5B64-41A4-861E-DA78207DC840}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4E688B5-5B64-41A4-861E-DA78207DC840}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4E688B5-5B64-41A4-861E-DA78207DC840}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDB0B5A9-4B8C-4579-85D3-C135E5AA2753}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDB0B5A9-4B8C-4579-85D3-C135E5AA2753}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDB0B5A9-4B8C-4579-85D3-C135E5AA2753}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDB0B5A9-4B8C-4579-85D3-C135E5AA2753}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F2E1FE4-1F91-4911-AA1F-64B68F9AEDC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F2E1FE4-1F91-4911-AA1F-64B68F9AEDC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F2E1FE4-1F91-4911-AA1F-64B68F9AEDC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F2E1FE4-1F91-4911-AA1F-64B68F9AEDC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

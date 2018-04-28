@@ -6,5 +6,7 @@ namespace FluentApi.Extensions.Jwt
         IJwt WithIssuer(string issuer);
         IJwt WithAudience(string audience);
         IJwt WithKey(string key);
+
+        void Apply();
     }
 }

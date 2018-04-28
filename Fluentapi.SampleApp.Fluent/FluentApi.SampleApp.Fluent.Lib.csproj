@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Framework\" />
+    <Folder Include="Enroll\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FluentApi.SampleApp.Common.Lib\FluentApi.SampleApp.Common.Lib.csproj" />
+  </ItemGroup>
+</Project>

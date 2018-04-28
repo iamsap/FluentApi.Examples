@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FluentApi.SampleApp.Common.Lib\FluentApi.SampleApp.Common.Lib.csproj" />
+    <ProjectReference Include="..\Fluentapi.SampleApp.Fluent\Fluentapi.SampleApp.Fluent.Lib.csproj" />
+  </ItemGroup>
+</Project>

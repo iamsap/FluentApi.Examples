@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Course\Instructors.cs" />
+    <Compile Remove="IConfigurable.cs" />
+    <Compile Remove="IExitable.cs" />
+    <Compile Remove="Class1.cs" />
+    <Compile Remove="Framework\IWith.cs" />
+    <Compile Remove="Framework\IRun.cs" />
+    <Compile Remove="Framework\IAttach.cs" />
+    <Compile Remove="Framework\AbstractAttach.cs" />
+    <Compile Remove="Course\CreateCourse\CreateCourse.cs" />
+    <Compile Remove="Course\CreateCourse\ICreateCourse.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Framework\" />
+    <Folder Include="Students\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+</Project>

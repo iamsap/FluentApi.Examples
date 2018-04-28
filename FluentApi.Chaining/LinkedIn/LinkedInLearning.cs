@@ -3,9 +3,9 @@ namespace FluentApi.Chaining.LinkedIn
 {
     public class LinkedInLearning
     {
-        public static ISelectable Select()
+        public static ISelect Select()
         {
-            throw new NotImplementedException();
+            return new Select();
         }
     }
 }

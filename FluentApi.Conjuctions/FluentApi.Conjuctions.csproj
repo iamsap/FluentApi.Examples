@@ -8,4 +8,9 @@
   <ItemGroup>
     <Folder Include="LinkedIn\" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="LinkedIn\IPlayable.cs" />
+    <Compile Remove="LinkedIn\Courses.cs" />
+    <Compile Remove="LinkedIn\ISupportsConjuctions.cs" />
+  </ItemGroup>
 </Project>

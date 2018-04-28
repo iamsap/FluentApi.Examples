@@ -1,5 +1,5 @@
 ﻿using System;
-using FluentApi.Chaining.LinkedIn;
+using FluentApi.Conjuctions.LinkedIn;
 
 namespace FluentApi.Conjuctions
 {
@@ -8,12 +8,18 @@ namespace FluentApi.Conjuctions
         static void Main(string[] args)
         {
             LinkedInLearning
-              .Select()
-              .Courses
-                .WithTopic(t => Topics.Fluent)
-                .And
-                .WithTopic(t => Topics.Art)
-            .Start();
+                .Courses
+                    .Select()
+                        .WithTopic(Topic.Art)
+                    .And
+                    .Select()
+                        .WithTopic(Topic.Math)
+                        .WithoutTests()
+                    .Not
+                    .Select()
+                        .WithHomework()
+                    .Attach()
+                .Enroll();
         }
     }
 }

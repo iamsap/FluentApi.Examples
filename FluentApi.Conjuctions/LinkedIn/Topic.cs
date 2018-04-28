@@ -1,7 +1,7 @@
 ﻿using System;
-namespace FluentApi.Chaining.LinkedIn
+namespace FluentApi.Conjuctions.LinkedIn
 {
-    public enum Topics
+    public enum Topic
     {
         Art,
         Fluent,

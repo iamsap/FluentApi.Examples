@@ -6,6 +6,7 @@ namespace FluentApi.Linq
 {
     class Program
     {
+        #region Fake data
         static List<Order> _orders = new List<Order>()
         {
             new Order {Id=1, Description="Order 1",Total=100.00},
@@ -14,6 +15,7 @@ namespace FluentApi.Linq
             new Order {Id=4, Description="Order 4",Total=400.00},
             new Order {Id=5, Description="Order 5",Total=500.00, IsShipped=true},
         };
+        #endregion
 
         const int MaxTotal = 300;
 
@@ -29,9 +31,13 @@ namespace FluentApi.Linq
             var orders = new List<Order>();
             foreach (var order in _orders)
             {
-                if (order.Total >= total && order.IsShipped)
+                if (order.Total >= total)
                 {
-                    orders.Add(order);
+                    if(order.IsShipped) 
+                    {
+                        orders.Add(order);    
+                    }
+
                 }
             }
             orders.Sort(Comparison);

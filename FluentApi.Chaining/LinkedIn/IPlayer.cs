@@ -1,8 +1,8 @@
 ﻿using System;
 namespace FluentApi.Chaining.LinkedIn
 {
-    public interface ISelectable
+    public interface IPlayer
     {
-        ICourses Courses { get; }
+        void Start();
     }
 }

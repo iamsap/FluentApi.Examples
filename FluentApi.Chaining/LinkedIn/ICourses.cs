@@ -3,6 +3,6 @@ namespace FluentApi.Chaining.LinkedIn
 {
     public interface ICourses
     {
-        IPlayable WithTopic(Func<Topics, Topics> topics);
+        IPlayer WithTopic(Topic topic);
     }
 }
